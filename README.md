@@ -410,13 +410,11 @@ Next to the name parameter inside the route, you can add the HTTP verb you want 
 
 | **Verb**        | **Path**           | **Action**  | **Route Name**        | **Description**   |
 | ------------- |-------------| -----| ------------- |-------------|
-| GET         | /movies | index | movies.index | Get all movies |
-| GET         | /movies/create | create | movies.create | Get new created movies |
-| POST         | /movies | store | movies.store | Create a new movie |
-| GET         | /movies/{movie} | show | movies.show | Get data of specific movie |
-| GET         | /movies/{movie}/edit | edit | movies.edit | Edit specific movie |
-| PUT/PATCH         | /movies/{movie} | update | movies.update | Update a specific movies |
-| DELETE         | /movies{delete} | destroy | movies.destroy | Delete a specific movie |
+| GET         | /movies | index | movies | Get all movies |
+| GET         | /movies/create | create | create_movie | Get new created movie |
+| GET         | /movies/{id} | show | show_movie | Get data of specific movie |
+| GET         | /movies/edit/{id} | edit | edit_movie | Edit specific movie |
+| DELETE         | /movies/delete/{id} | destroy | delete_movie | Delete a specific movie |
 
 ## 9. Views
 
